@@ -25,7 +25,7 @@ public class Principal {
 				}
 			}
 			if (!existe) {
-				System.out.println("Introduccir regla válida: ");
+				System.out.println("Introducir regla válida: ");
 				expresion = reader.next();
 			} 
 		}

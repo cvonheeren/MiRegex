@@ -5,6 +5,7 @@ public class Regla3 extends Regla{
 		setRuleName();
 	}
 
+	//Valida si la primera letra de la palabra esta en mayuscula.
 	@Override
 	public boolean patronear(String entrada) {
 		

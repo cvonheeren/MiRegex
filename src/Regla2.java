@@ -5,6 +5,7 @@ public class Regla2 extends Regla {
 		setRuleName();
 	}
 	
+	//Valida si son 5 caracteres.
 	@Override
 	public boolean patronear(String entrada) {
 		if (entrada.length() == 5) {

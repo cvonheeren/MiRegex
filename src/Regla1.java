@@ -5,6 +5,7 @@ public class Regla1 extends Regla {
 		setRuleName();
 	}
 	
+	// Valida si solo son numeros.
 	@Override
 	public boolean patronear(String entrada) {
 		char numeros[] = {'1','2','3','4','5','6','7','8','9','0'};
