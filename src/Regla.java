@@ -14,4 +14,8 @@ public class Regla {
 	public boolean patronear(String entrada) {
 		return false;
 	}
+	
+	public boolean patronear(String entrada, String rango) {
+		return false;
+	}
 }

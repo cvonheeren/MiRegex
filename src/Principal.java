@@ -12,8 +12,9 @@ public class Principal {
 		int indice = -1;
 		
 		String entrada;
+		String rango;
 		
-		System.out.println("Introduccir regla: ");
+		System.out.println("Introducir regla: ");
 		expresion = reader.next();
 		
 		while (!existe) {
@@ -30,15 +31,35 @@ public class Principal {
 			} 
 		}
 		
+	
+
 		
-		System.out.println("Introducir entrada: ");
-		entrada = reader.next();
-		if (reglas[indice].patronear(entrada)) {
-			System.out.println("El patrón coincide");
+		if (expresion.equals("si6")) {
+			
+			System.out.println("Introduce rango de numeros, ejemplo: 1-5");
+			rango = reader.next();
+							
+			System.out.println("Introducir entrada: ");
+			entrada = reader.next();
+			
+			if (reglas[indice].patronear(entrada, rango)) {
+				System.out.println("El patrón coincide");
+			} else {
+				System.out.println("El patrón no coincide");
+			}	
+			
 		} else {
-			System.out.println("El patrón no coincide");
+			
+			System.out.println("Introducir entrada: ");
+			entrada = reader.next();
+			
+			if (reglas[indice].patronear(entrada)) {
+				System.out.println("El patrón coincide");
+			} else {
+				System.out.println("El patrón no coincide");
+			}		
+			
 		}
-		
 		
 		reader.close();
 	}

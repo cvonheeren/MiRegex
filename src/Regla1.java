@@ -15,10 +15,10 @@ public class Regla1 extends Regla {
 	        boolean banderaTemp = false;
 	        for (char charNumero:numeros) {
 	            if (charCadena != charNumero){
-	            banderaTemp |= false;
-	        } else {
-	            banderaTemp |= true;
-	        }
+	            	banderaTemp |= false;
+	            } else {
+	            	banderaTemp |= true;
+	            }
 	    }
 	        bandera &= banderaTemp;
 	    }
