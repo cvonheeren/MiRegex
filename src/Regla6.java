@@ -6,7 +6,6 @@ public class Regla6 extends Regla{
 		setRuleName();
 	}
 	
-	boolean validarRango = true;
 	
 	//Limite de rango de solo numeros
 	@Override
